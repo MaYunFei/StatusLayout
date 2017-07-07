@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center_horizontal"
+              android:background="@color/white"
+              android:gravity="center_horizontal"
+              android:orientation="vertical"
+              android:paddingTop="@dimen/spacing_xxlarge">
+
+    <ImageView
+        android:id="@+id/app_view_iv"
+        android:layout_width="157dp"
+        android:layout_height="168dp"
+        android:src="@mipmap/img_special_nonetwork"/>
+
+    <TextView
+        android:id="@+id/app_message_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:gravity="center_horizontal"
+        android:text="@string/app_nonetwork_message"
+        android:textColor="@color/text_color_primary_light_more"
+        android:textSize="@dimen/font_size_medium"/>
+
+    <Button
+        android:id="@+id/app_action_nonetwork_btn"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/action_btn_selector"
+        android:paddingLeft="@dimen/spacing_large"
+        android:paddingRight="@dimen/spacing_large"
+        android:text="@string/app_empty_button"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_medium"/>
+
+</LinearLayout>

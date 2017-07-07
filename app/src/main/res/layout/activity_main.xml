@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="io.github.mayunfei.demo.MainActivity">
+
+    <io.github.mayunfei.statuslayout.StatusLayout
+        android:id="@+id/statusLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:emptyView="@layout/app_view_empty"
+        app:errorView="@layout/app_view_error"
+        app:loadingView="@layout/app_view_loading"
+        app:networkView="@layout/app_view_nonetwork">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!" />
+    </io.github.mayunfei.statuslayout.StatusLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/empty"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="空" />
+
+        <Button
+            android:id="@+id/neterror"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="网络问题" />
+
+        <Button
+            android:id="@+id/loading"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="加载" />
+
+        <Button
+            android:id="@+id/error"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="错误" />
+        <Button
+            android:id="@+id/content"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="正常" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

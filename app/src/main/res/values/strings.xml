@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Demo</string>
+    <string name="app_loading_message">loading...</string>
+    <string name="app_empty_message">这里空荡荡的~</string>
+    <string name="app_error_message">sorry，数据出现异常~</string>
+    <string name="app_nonetwork_message">糟糕，貌似没网了~</string>
+    <string name="app_empty_button">刷新</string>
+    <string name="app_loading_button">取消</string>
+</resources>

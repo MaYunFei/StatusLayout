@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    /**
+    * Created by guanaj on .
+    */
+    <declare-styleable name="StatusLayout">
+        <attr name="emptyView" format="reference" />
+        <attr name="networkView" format="reference" />
+        <attr name="loadingView" format="reference" />
+        <attr name="errorView" format="reference" />
+        <attr name="retryId" format="reference" />
+    </declare-styleable>
+
+</resources>
